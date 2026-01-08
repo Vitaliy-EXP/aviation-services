@@ -1,0 +1,107 @@
+.container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.list {
+  margin-bottom: 16px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemName {
+  font-size: 14px;
+  flex: 1;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.itemPrice {
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+}
+
+.removeButton {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.removeButton:hover {
+  background: #c82333;
+}
+
+.total {
+  border-top: 2px solid #ddd;
+  padding-top: 12px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.totalLabel {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.totalAmount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.orderButton {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.orderButton:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.orderButton:hover:not(:disabled) {
+  background: #0056b3;
+}
